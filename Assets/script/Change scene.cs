@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class change : MonoBehaviour
+public class SceneChanger : MonoBehaviour
 {
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene("play");
     }
-
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
