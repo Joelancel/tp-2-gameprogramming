@@ -3,12 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - sol
+  - Sol
+  - tagJoueur
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - sol
   - Water
   - UI
   - 
