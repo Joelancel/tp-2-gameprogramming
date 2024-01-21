@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class DeplacementObstacle : MonoBehaviour
 {
-    public float vitesseMin = 5f;
-    public float vitesseMax = 12f;
+    public float vitesseMin = 7f;
+    public float vitesseMax = 15f;
     public float tailleMin = 0.3f;
     public float tailleMax = 1f;
     private string tagJoueur = "tagJoueur";

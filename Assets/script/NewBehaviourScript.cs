@@ -9,7 +9,7 @@ public class ControleurMouvement : MonoBehaviour
     private int sautsRestants;
     private Rigidbody2D rb;
     private bool estAuSol;
-
+    public float vitesse = 5.0f;  
     void Start()
     {
         // Récupérer le composant Rigidbody2D attaché au GameObject
@@ -24,8 +24,9 @@ public class ControleurMouvement : MonoBehaviour
         {
             Sauter();
         }
-    }
-
+         float deplacementHorizontal = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * deplacementHorizontal * vitesse * Time.deltaTime);
+}
     void Sauter()
     {
         // Ajouter une force vers le haut au Rigidbody2D
